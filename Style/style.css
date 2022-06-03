@@ -1,0 +1,1390 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;700&family=Barlow:wght@100;300;400;500;600;700;900&family=Bellefair&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+
+
+
+
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################ NAVBAR STYLING ################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.horizontal-line{
+    position: absolute;
+    right: 50%;
+    border-bottom: 1px solid #979797;
+    margin-left: 100px;
+    width: 500px;
+    align-self: center;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.horizontal-line-2{
+    position: absolute;
+    left: 0px;
+    border-bottom: 1px solid #979797;
+    height: 0px;
+    width: 40px;
+    padding: 0px;
+    align-self: center;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.navbar-buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+.navbar-button{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    height: 100%;
+    background-color: transparent;
+    color: #D0D6F9;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-width: 0px;
+}
+
+.navbar-button:hover{
+    border-bottom: 2px solid  rgb(255, 255, 255, 0.5);
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+
+.selected-navbar-item{
+    border-bottom: 3px solid white;
+    color: #ffffff;
+}
+
+.button-number{
+    font-weight: 700;
+}
+
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################ HOME PAGE STYLING ############### */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+
+.main-container{
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    height: 83vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 8% 0px 8%;
+} 
+
+.home-page-text-container{
+    width: 40%;
+}
+
+.home-top-text{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 4.725px;
+    color: #D0D6F9;
+    margin: 0px;
+}
+
+.home-middle-text{
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 100px;
+    color: #ffffff;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.intro-para{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+
+.explore-button-container{
+    display: flex;
+    flex-direction: row;
+    height: 280px;
+    width: 280px;
+    border-radius: 3000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-button{
+    height: 190px;
+    width: 190px;
+    border-radius: 2000px;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    border-width: 0px;
+}
+
+
+
+
+
+
+
+
+
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ########### DESTINATION PAGE STYLING ############# */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+
+.destination-main-container{
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.destination-page-container{
+    flex-grow: 1;
+    padding: 30px 8% 0px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.destination-heading{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.planet-number{
+    font-weight: 700;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    padding-right: 20px;
+}
+
+.planet-details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.planet-image{
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+    align-self: center;
+}
+
+.planet-details-text-container{
+    max-width: 400px;
+    padding-left: 10px;
+}
+
+.destination-page-buttons-container{
+    text-align: start;
+}
+
+.planet-button{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.7px;
+    height: 40px;
+    background-color: transparent;
+    color: #D0D6F9;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-width: 0px;
+}
+
+.planet-button:hover{
+    border-bottom: 2px solid  rgb(255, 255, 255, 0.5);
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+
+.planet-name{
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 70px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.planet-detail{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0px;
+    color: #D0D6F9;
+}
+
+.d-horizontal-line{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #383B4B;
+}
+
+.planet-data-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.planet-data-text{
+    margin-right: 70px;
+}
+
+.planet-data-title{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.planet-data{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.selected-planet-button{
+    border-bottom: 3px solid white;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ############## CREW PAGE STYLING ################# */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+
+.crew-main-container{
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.crew-page-main-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 8% 0px 8%;
+}
+
+.crew-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-self: center;
+}
+
+.crew-heading{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.crew-page-number{
+    font-weight: 700;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    padding-right: 20px;
+}
+
+.crew-member-photo{
+    width: 381px;
+    height: 470px;
+    align-self: flex-end;
+}
+
+.crew-member-details-container{
+    margin-top: 30px;
+}
+
+.crew-designation{
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin: 0px;
+}
+
+.crew-member-name{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.crew-member-detail{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #D0D6F9;
+    margin: 0px;
+    margin-top: 15px;
+    width: 90%;
+}
+
+.crew-buttons-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.crew-button{
+    width: 15px;
+    height: 15px;
+    border-radius: 300px;
+    border-width: 0px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+}
+
+.crew-button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.crew-selected-button{
+    opacity: 100;
+}
+
+.crew-heading-mobile{
+    display: none;
+}
+
+.crew-horizontal-line{
+    display: none;
+}
+
+
+
+
+
+
+
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ########### TECHNOLOGY PAGE STYLING ############## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+/* ################################################## */
+
+.technology-main-container{
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.technology-page-container{
+    padding: 20px 0px 0px 5%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+.technology-page-heading{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.technology-page-number{
+    font-weight: 700;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    padding-right: 20px;
+}
+
+.technology-details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.technology-buttons-and-text-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.technolgy-page-buttons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.technolgy-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 3000px;
+    border-width: 0px;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+}
+
+.technolgy-button:hover{
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.selected-technology-button{
+    background-color: #FFFFFF;
+    color: #0B0D17;
+}
+
+.middle-button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.technology-text-container{
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 60%;
+    align-self: center;
+}
+
+.technology-top-text{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    margin: 0px;
+}
+
+.technology-name{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin: 0px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.technology-detail{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #D0D6F9;
+    margin: 0px;
+}
+
+.technology-image{
+    align-self: center;
+    width: 33%;
+}
+
+
+
+
+/* ##################### HAMBURGER MENU STYLING ###################### */
+
+.hamburger-menu-container{
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    left: 20%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    flex-direction: column;
+}
+
+.cross-icon{
+   align-self: flex-end;
+   margin-right: 20px;
+   margin-top: 35px;
+}
+
+.navbar-buttons-container-hamburger{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height : 40%;
+    justify-content: center;
+    padding-left: 0px;
+    margin-left: 20px;
+}
+
+.navbar-button-hamburger{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    background-color: transparent;
+    color: #ffffff;
+    border-width: 0px;
+    text-align: start;
+    margin-bottom: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.button-number-hamburger{
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.selected-hamburger-navbar-item{
+    border-right: 4px solid #ffffff;
+}
+
+.display-none{
+    display: none;
+}
+
+
+
+
+
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ############################### MEDIA QUERIES #################################### */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+/* ################################################################################## */
+
+
+
+/* ##################### TABLET ##################### */
+
+
+@media all and (min-width: 769px){
+    .hamburger-icon{
+        display: none;
+    }
+
+    .hamburger-menu-container{
+        display: none;
+    }
+}
+
+@media all and (max-width : 768px){
+
+    .hamburger-icon{
+        display: none;
+    }
+
+    .hamburger-menu-container{
+        display: none;
+    }
+    
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+    
+    .horizontal-line{
+        display: none;
+    }
+    
+    .horizontal-line-2{
+        display: none;
+    }
+
+    .navbar-buttons-container{
+        width: 60%;
+        justify-content: end;
+        padding-right: 20px;
+    }
+    
+    .navbar-button{
+        font-weight: 200;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-left: 13px;
+        margin-right: 5px;
+    }
+    
+    .navbar-button:hover{
+        cursor: pointer;
+    }
+    
+    .button-number{
+        display: none;
+    }
+
+    
+/* ############## HOME PAGE TABLET ############### */
+
+
+    .main-container{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        height: 83vh;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 4% 0px 4%;
+    } 
+
+    .home-page-text-container{
+        width: 70%;
+        text-align: center;
+    }
+    
+    .home-top-text{
+        font-size: 21px;
+        text-align: center;
+    }
+    
+    .home-middle-text{
+        font-size: 130px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .intro-para{
+        font-size: 15px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 25px;
+    }
+    
+    .explore-button-container{
+        height: 250px;
+        width: 250px;
+        margin-top: 60px;
+    }
+    
+    .explore-button{
+        height: 170px;
+        width: 170px;
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+    /* ############## DESTINATION PAGE STYLING TABLET ################ */
+
+    .main-content{
+        height: 100%;
+    }
+
+    .destination-main-container{
+        padding-top: 0px;
+    }
+
+    .destination-page-container{
+        padding: 30px 6% 0px 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .destination-heading{
+        font-size: 17px;
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+    
+    .planet-details-container{
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    
+    .planet-image{
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+        align-self: center;
+    }
+    
+    .planet-details-text-container{
+        max-width: 80%;
+        margin-top: 30px;
+        align-self: center;
+    }
+    
+    .destination-page-buttons-container{
+        text-align: center;
+    }
+    
+    .planet-name{
+        text-align: center;
+    }
+    
+    .planet-detail{
+        text-align: center;
+    }
+    
+    .d-horizontal-line{
+        text-align: center;
+    }
+    
+    .planet-data-container{
+        justify-content: space-around;
+    }
+    
+    .planet-data-text{
+        margin-right: 0px;
+    }
+    
+    .planet-data-title{
+        text-align: center;
+    }
+    
+    .planet-data{
+        text-align: center;
+    }
+
+
+    /* ################# CREW PAGE STYLING TABLET ################### */
+
+    .crew-main-container{
+        padding-top: 0px;
+    }
+    
+    .crew-page-main-container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 4% 0px 4%;
+    }
+    
+    .crew-text-container{
+        width: 80%;
+        align-self: center;
+    }
+    
+    .crew-heading{
+        font-size: 18px;
+        letter-spacing: 3.725px;
+        margin-bottom: 15px;
+    }
+    
+    .crew-member-photo{
+        width: 350px;
+        height: 450px;
+        margin-top: auto;
+        align-self: center;
+    }
+    
+    .crew-member-details-container{
+        margin-top: 20px;
+    }
+    
+    .crew-designation{
+        text-align: center;
+    }
+    
+    .crew-member-name{
+        text-align: center;
+    }
+    
+    .crew-member-detail{
+        text-align: center;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .crew-buttons-container{
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    /* ################ TECHNOLOGY PAGE STYLING TABLET ##################### */
+
+    .technology-main-container{
+        padding-top: 0px;
+    }
+    
+    .technology-page-container{
+        padding: 50px 0px 0px 0px;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+    
+    .technology-page-heading{
+        font-size: 18px;
+        letter-spacing: 3.725px;
+        margin-bottom: 20px;
+        padding-left: 50px;
+    }
+    
+    .technology-details-container{
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .technology-buttons-and-text-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .technolgy-page-buttons-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .middle-button{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .technology-text-container{
+        margin-left: 0;
+        margin-right: 0px;
+        width: 100%;
+        align-self: center;
+    }
+    
+    .technology-top-text{
+        text-align: center;
+    }
+    
+    .technology-name{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .technology-detail{
+        text-align: center;
+    }
+    
+    .technology-image{
+        order: -1;
+        align-self: center;
+        justify-self: center;
+        width: 100vw;
+        height: 250px;
+    }
+    
+}
+
+/* ###################### MOBILE ######################## */
+
+
+@media all and (max-width : 600px){
+
+    .hamburger-menu-container{
+        display: flex;
+    }
+
+    .navbar{
+        padding-top: 20px;
+    }
+    
+    .navbar-buttons-container{
+        display: none;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .hamburger-icon{
+        display: inline;
+        margin-right: 20px;
+        margin-left: 20px;
+        align-self: center;
+    }
+
+    .main-content{
+        background-image: url(../assets/home/background-home-mobile.jpg);
+        background-size: cover;
+        justify-content: center;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .home-page-text-container{
+        width: 85%;
+    }
+
+    .home-top-text{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .home-middle-text{
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .intro-para{
+        font-size: 14px;
+        width: 100%;
+        line-height: 20px;
+    }
+
+    .explore-button-container{
+        height: 200px;
+        width: 200px;
+        margin-top: 30px;
+    }
+    
+    .explore-button{
+        height: 130px;
+        width: 130px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+
+    /* ################# DESTINATION PAGE ############### */
+
+    .destination-main-container{
+        height: 100%;
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+        background-size: cover;
+    }
+
+    .main-content{
+        height: 100%;
+    }
+
+    .destination-main-container{
+        padding-top: 0px;
+    }
+
+    .destination-page-container{
+        padding: 30px 2% 0px 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .destination-heading{
+        font-size: 15px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .planet-details-container{
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    
+    .planet-image{
+        width: 200px;
+        height: 200px;
+        margin-left: 0px;
+        align-self: center;
+    }
+    
+    .planet-details-text-container{
+        max-width: 100%;
+        margin-top: 30px;
+        align-self: center;
+    }
+    
+    .destination-page-buttons-container{
+        text-align: center;
+    }
+
+    .planet-button{
+        font-size: 13px;
+        letter-spacing: 2px;
+        background-color: transparent;
+        color: #D0D6F9;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    
+    .planet-name{
+        text-align: center;
+        font-size: 60px;
+    }
+    
+    .planet-detail{
+        text-align: center;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    
+    .d-horizontal-line{
+        text-align: center;
+    }
+    
+    .planet-data-container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .planet-data-text{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .planet-data-title{
+        text-align: center;
+    }
+    
+    .planet-data{
+        text-align: center;
+    }
+
+    /* ################### CREW PAGE ################## */
+    
+    .crew-main-container{
+        padding-top: 0px;
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+        background-size: cover;
+        height: 100%;
+    }
+    
+    .crew-page-main-container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 0% 0px 0%;
+    }
+    
+    .crew-text-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .crew-heading-mobile{
+        order: -4;
+        display: inline;
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Barlow Condensed';
+        font-weight: 400;
+        color: #ffffff;
+        margin: 0px;
+    }
+    
+    .crew-heading{
+        display: none;
+    }
+    
+    .crew-member-photo{
+        order :-3;
+        width: 200px !important; 
+        height: 250px !important;
+        margin-top: 20px;
+        align-self: center;
+        margin-bottom: 0px;
+    }
+    
+    .crew-member-details-container{
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    
+    .crew-designation{
+        text-align: center;
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .crew-member-name{
+        text-align: center;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .crew-member-detail{
+        text-align: center;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 28px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .crew-buttons-container{
+        order: -1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .crew-horizontal-line{
+        order: -2;
+        display: inline;
+        width: 90%;
+        border: none;
+        margin-top: 0px;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+        align-self: center;
+    }
+
+    /* ################## TECHNOLOGY PAGE #################### */
+    
+    .technology-main-container{
+        padding-top: 0px;
+        height: 100%;
+    }
+    
+    .technology-page-container{
+        padding: 20px 0px 0px 0px;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+    
+    .technology-page-heading{
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 0px;
+    }
+    
+    .technology-details-container{
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .technology-buttons-and-text-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .technolgy-page-buttons-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    
+    .technolgy-button{
+        width: 50px;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    .middle-button{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .technology-text-container{
+        margin-left: 0;
+        margin-right: 0px;
+        width: 100%;
+        align-self: center;
+    }
+    
+    .technology-top-text{
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .technology-name{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .technology-detail{
+        text-align: center;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 70px;
+    }
+    
+    .technology-image{
+        order: -1;
+        align-self: center;
+        justify-self: center;
+        width: 100vw;
+        height: 180px;
+    }
+
+}

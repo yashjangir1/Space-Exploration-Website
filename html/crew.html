@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crew</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+
+    <!-- ########### HAMBURGER MENU ############## -->
+
+    <div class="crew-main-container">
+        <div class="hamburger-menu-container" id = "hamburgerMenuCP">
+            <svg id = "crossIconCP" class = "cross-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+            <div class="navbar-buttons-container-hamburger">
+                <a href = "index.html" class="navbar-button-hamburger" id = "homeButtonHamburgerCP"><span class="button-number-hamburger">00</span> HOME</a>
+                <a href = "destination.html" class="navbar-button-hamburger" id = "destinationButtonHamburgerCP"><span class="button-number-hamburger">01</span> DESTINATION</a>
+                <a href = "crew.html" class="navbar-button-hamburger selected-hamburger-navbar-item" id = "crewButtonHamburgerCP"><span class="button-number-hamburger">02</span> CREW</a>
+                <a href = "technology.html" class="navbar-button-hamburger" id = "technologyButtonHamburgerCP"><span class="button-number-hamburger">03</span> TECHNOLOGY</a>
+            </div>
+        </div>
+
+        <!-- ############## NAVBAR ################# -->
+
+        <nav class="navbar">
+            <img src="../assets/shared/logo.svg" alt="" class="logo">
+            <div class="horizontal-line"></div>
+            <div class="navbar-buttons-container">
+                <div class="horizontal-line-2"></div>
+                <button class="navbar-button" id = "homeButtonCP"><span class="button-number">00</span> HOME</button>
+                <button class="navbar-button" id = "destinationButtonCP"><span class="button-number">01</span> DESTINATION</button>
+                <button class="navbar-button selected-navbar-item" id = "crewButtonCP"><span class="button-number">02</span> CREW</button>
+                <button class="navbar-button" id = "technologyButtonCP"><span class="button-number">03</span> TECHNOLOGY</button>
+            </div>
+            <svg id = "hamburgerIconCP" class = "hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+        </nav>
+
+        <!-- ################ MAIN CONTENT ################ -->
+
+        
+        <div class="crew-page-main-container">
+            <h1 class="crew-heading-mobile"><span class="crew-page-number">02</span>MEET YOUR CREW</h1>
+            <div class="crew-text-container">
+                <h1 class="crew-heading"><span class="crew-page-number">02</span>MEET YOUR CREW</h1>
+                <div class="crew-member-details-container">
+                    <h1 class="crew-designation" id = "crewDesignation">Commander</h1>
+                    <h1 class="crew-member-name" id = "crewMemberName">Douglas Hurley</h1>
+                    <p class="crew-member-detail" id = "crewMemberDetail">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                </div>
+                <div class="crew-buttons-container">
+                    <button class="crew-button crew-selected-button" id = "crewButton1"></button>
+                    <button class="crew-button" id = "crewButton2"></button>
+                    <button class="crew-button" id = "crewButton3"></button>
+                    <button class="crew-button" id = "crewButton4"></button>
+                </div>
+            </div>
+            <img src="../assets/crew/image-douglas-hurley.png" alt="" class="crew-member-photo" id = "crewMemberPhoto">
+            <div class = "crew-horizontal-line"></div>
+        </div>
+    </div>
+    <script type = "module" src = "../javascript/crew.js"></script>
+    <script src = "../javascript/hamburgerMenuCP.js"></script>
+</body>
+</html>
